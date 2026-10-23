@@ -1,0 +1,14 @@
+\begin{table}[t]
+\centering
+\caption{Layer-selection ablation (ResNet-50, input $448\times448$, threshold 0.15).}\label{tab:layers}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrrr}
+\toprule
+Target layer & Map size & Loc. acc. (\%) & Mean IoU & Pointing (\%) & Mass (\%) \\
+\midrule
+Grad-CAM (layer2) & $56\times56$ & 12.1 & 0.197 & 50.6 & 36.9 \\
+Grad-CAM (layer3) & $28\times28$ & 29.5 & 0.355 & 72.9 & 44.7 \\
+Grad-CAM (layer4) & $14\times14$ & 38.8 & 0.423 & 85.6 & 64.1 \\
+\bottomrule
+\end{tabular}}
+\end{table}

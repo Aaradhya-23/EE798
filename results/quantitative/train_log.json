@@ -1,0 +1,66 @@
+{
+  "args": {
+    "root": "data",
+    "img_size": 448,
+    "epochs": 6,
+    "bs": 32,
+    "lr_head": 0.001,
+    "lr_layer4": 0.0001,
+    "weight_decay": 0.0001,
+    "workers": 4,
+    "seed": 0,
+    "ckpt": "checkpoints/resnet50_voc07.pt",
+    "max_train": 0,
+    "no_pretrained": false,
+    "no_download": false
+  },
+  "n_train": 4510,
+  "n_val": 501,
+  "log": [
+    {
+      "epoch": 1,
+      "train_loss": 0.11573008143089035,
+      "val_mAP": 0.8777712922342588,
+      "seconds": 69.51152873039246
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.049434291612679045,
+      "val_mAP": 0.8989266182329985,
+      "seconds": 72.17844867706299
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.02973234656363924,
+      "val_mAP": 0.9111569513927004,
+      "seconds": 71.8584291934967
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.017960628083268978,
+      "val_mAP": 0.9104217376631425,
+      "seconds": 72.05711698532104
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.011430205389064326,
+      "val_mAP": 0.9126692120827989,
+      "seconds": 71.00626564025879
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.009721997691248182,
+      "val_mAP": 0.9124249570670486,
+      "seconds": 70.79766297340393
+    }
+  ],
+  "best_val_mAP": 0.9126692120827989,
+  "env": {
+    "python": "3.13.15",
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+    "torch": "2.11.0+cu130",
+    "torchvision": "0.26.0+cu130",
+    "cuda_available": true,
+    "device": "Tesla T4"
+  }
+}

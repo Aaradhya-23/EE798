@@ -1,0 +1,90 @@
+{
+  "gt_area_mean": 0.3330542588761451,
+  "gt_area_median": 0.2698899872448979,
+  "gradcam_pred_area_by_gt_bin": {
+    "$<10\\%$": {
+      "n": 1787,
+      "mean_pred_area": 0.21011556668038295,
+      "mean_gt_area": 0.04468162108549697
+    },
+    "10--30\\%": {
+      "n": 1968,
+      "mean_pred_area": 0.37016883496920105,
+      "mean_gt_area": 0.19065115640506392
+    },
+    "30--60\\%": {
+      "n": 1876,
+      "mean_pred_area": 0.5459258729102981,
+      "mean_gt_area": 0.4385862669586424
+    },
+    "$>60\\%$": {
+      "n": 1382,
+      "mean_pred_area": 0.6762410136868152,
+      "mean_gt_area": 0.765466098407412
+    }
+  },
+  "n_prob_lt_0.5": 1084,
+  "categories": {
+    "success": 2624,
+    "partial": 375,
+    "background": 559,
+    "n_pairs": 7013
+  },
+  "pointing_hit_but_iou_lt_0.5": 3381,
+  "zero_mass_pairs": {
+    "gradcam@layer4": 69,
+    "gradcampp@layer4": 0,
+    "cam@layer4": 0,
+    "saliency": 0,
+    "center": 0
+  },
+  "zero_mass_max_prob": 0.1234528869390487,
+  "pointing_disagreements_gradcam_vs_cam": 1,
+  "pointing_disagreement_gradcam_mass": [
+    0.0
+  ],
+  "best_threshold": {
+    "cam@layer4": {
+      "thr": 0.3,
+      "loc_acc": 0.3830029944388992,
+      "loc_acc_lo": 0.3717346356766006,
+      "loc_acc_hi": 0.3938400114073863
+    },
+    "center": {
+      "thr": 0.3,
+      "loc_acc": 0.2908883502067588,
+      "loc_acc_lo": 0.2796199914444602,
+      "loc_acc_hi": 0.3012975901896478
+    },
+    "gradcam@layer2": {
+      "thr": 0.05,
+      "loc_acc": 0.1656922857550263,
+      "loc_acc_lo": 0.1571367460430628,
+      "loc_acc_hi": 0.1736774561528589
+    },
+    "gradcam@layer3": {
+      "thr": 0.2,
+      "loc_acc": 0.3040068444317695,
+      "loc_acc_lo": 0.2937330671609867,
+      "loc_acc_hi": 0.3144160844146585
+    },
+    "gradcam@layer4": {
+      "thr": 0.2,
+      "loc_acc": 0.3944103807215172,
+      "loc_acc_lo": 0.3837123912733495,
+      "loc_acc_hi": 0.4052509624982175
+    },
+    "gradcampp@layer4": {
+      "thr": 0.3,
+      "loc_acc": 0.3966918579780408,
+      "loc_acc_lo": 0.3852844716954228,
+      "loc_acc_hi": 0.4072436902894624
+    },
+    "saliency": {
+      "thr": 0.05,
+      "loc_acc": 0.1521460145444175,
+      "loc_acc_lo": 0.1440146870098388,
+      "loc_acc_hi": 0.1605589619278482
+    }
+  }
+}

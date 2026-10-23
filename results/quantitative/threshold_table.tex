@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\caption{Sensitivity to the binarisation threshold: localisation accuracy (IoU $\ge 0.5$, \%) of each method.}\label{tab:thr}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrrrrrr}
+\toprule
+Method & 0.05 & 0.1 & 0.15 & 0.2 & 0.3 & 0.4 & 0.5 & 0.6 \\
+\midrule
+Grad-CAM (layer4) & 35.0 & 37.3 & 38.8 & 39.4 & 37.1 & 32.0 & 24.6 & 17.4 \\
+Grad-CAM++ (layer4) & 24.1 & 28.6 & 33.0 & 36.0 & 39.7 & 38.4 & 31.8 & 23.3 \\
+CAM (layer4) & 22.2 & 24.6 & 28.3 & 32.4 & 38.3 & 38.2 & 33.6 & 25.1 \\
+Vanilla saliency & 15.2 & 3.5 & 0.6 & 0.1 & 0.0 & 0.0 & 0.0 & 0.0 \\
+Centre Gaussian (no model) & 22.0 & 22.0 & 23.1 & 25.9 & 29.1 & 27.5 & 18.5 & 11.4 \\
+\bottomrule
+\end{tabular}}
+\end{table}

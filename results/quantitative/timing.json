@@ -1,0 +1,45 @@
+{
+  "img_size": 448,
+  "runs": 100,
+  "params": 23549012,
+  "results": {
+    "forward only": {
+      "ms_mean": 18.78529874002197,
+      "ms_std": 0.34669354394065455,
+      "peak_mem_MB": 242.88671875
+    },
+    "Grad-CAM (layer4)": {
+      "ms_mean": 19.20917166000436,
+      "ms_std": 0.2293043699547067,
+      "peak_mem_MB": 704.98974609375
+    },
+    "Grad-CAM (layer2)": {
+      "ms_mean": 32.04293011001482,
+      "ms_std": 0.38450239704261113,
+      "peak_mem_MB": 787.86328125
+    },
+    "Grad-CAM++ (layer4)": {
+      "ms_mean": 19.9951930199677,
+      "ms_std": 0.33737331177719604,
+      "peak_mem_MB": 711.12890625
+    },
+    "CAM (layer4)": {
+      "ms_mean": 19.689109369978723,
+      "ms_std": 0.3236698992121749,
+      "peak_mem_MB": 257.12841796875
+    },
+    "Vanilla saliency": {
+      "ms_mean": 69.18491342999914,
+      "ms_std": 0.6345532700561992,
+      "peak_mem_MB": 548.14453125
+    }
+  },
+  "env": {
+    "python": "3.13.15",
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+    "torch": "2.11.0+cu130",
+    "torchvision": "0.26.0+cu130",
+    "cuda_available": true,
+    "device": "Tesla T4"
+  }
+}

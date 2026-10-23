@@ -1,0 +1,15 @@
+\begin{table}[t]
+\centering
+\caption{Size of the predicted box at $\tau=0.15$ as a percentage of the image area (ground-truth boxes cover on average 33.3\% of the image, median 27.0\%). ``$>90\%$'' = share of pairs whose box covers more than 90\% of the image.}\label{tab:boxarea}
+\begin{tabular}{lrrrr}
+\toprule
+Method & Median area (\%) & Mean area (\%) & $>90\%$ of image (\%) & Loc. acc. (\%) \\
+\midrule
+Grad-CAM & 39.9 & 43.7 & 4.8 & 38.8 \\
+Grad-CAM++ & 73.7 & 68.7 & 22.7 & 33.0 \\
+CAM & 94.4 & 79.6 & 52.7 & 28.3 \\
+Saliency & 0.3 & 0.4 & 0.0 & 0.6 \\
+Centre & 94.7 & 94.7 & 100.0 & 23.1 \\
+\bottomrule
+\end{tabular}
+\end{table}

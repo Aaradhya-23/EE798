@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering
+\caption{Measured cost per image (batch 1, 448$\times$448 input, 100 runs after warm-up, device: Tesla T4). Parameters: 23,549,012.}\label{tab:timing}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrr}
+\toprule
+Method & Time (ms) & Peak GPU mem. (MB) \\
+\midrule
+forward only & 18.8 $\pm$ 0.3 & 243 \\
+Grad-CAM (layer4) & 19.2 $\pm$ 0.2 & 705 \\
+Grad-CAM (layer2) & 32.0 $\pm$ 0.4 & 788 \\
+Grad-CAM++ (layer4) & 20.0 $\pm$ 0.3 & 711 \\
+CAM (layer4) & 19.7 $\pm$ 0.3 & 257 \\
+Vanilla saliency & 69.2 $\pm$ 0.6 & 548 \\
+\bottomrule
+\end{tabular}}
+\end{table}

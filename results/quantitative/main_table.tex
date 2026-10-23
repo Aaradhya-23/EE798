@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\caption{Weakly-supervised localisation on VOC2007 test (4952 images, 7013 image--class pairs; threshold 0.15 of the map maximum; brackets: 95\% bootstrap CI). Loc.\ acc.\ = fraction of pairs with box IoU $\ge 0.5$; Mass = share of heat-map energy inside ground-truth boxes; Empty = map identically zero (counted as failure); time = ms per explanation (batch size 1, measured separately, see Table~\ref{tab:timing}).}\label{tab:main}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrrrr}
+\toprule
+Method & Loc. acc.@0.5 (\%) & Mean IoU & Pointing (\%) & Mass in GT (\%) & Empty maps (\%) & Time (ms) \\
+\midrule
+Grad-CAM (layer4) & 38.8 [37.7, 40.0] & 0.423 & 85.6 & 64.1 & 0.2 & 19.2 \\
+Grad-CAM++ (layer4) & 33.0 [31.9, 34.0] & 0.379 & 85.9 & 53.2 & 0.0 & 20.0 \\
+CAM (layer4) & 28.3 [27.2, 29.2] & 0.348 & 85.6 & 48.2 & 0.0 & 19.7 \\
+Vanilla saliency & 0.6 [0.4, 0.8] & 0.038 & 68.5 & 46.2 & 0.0 & 69.2 \\
+Centre Gaussian (no model) & 23.1 [22.2, 24.1] & 0.304 & 63.1 & 43.7 & 0.0 & -- \\
+\bottomrule
+\end{tabular}}
+\end{table}

@@ -1,0 +1,15 @@
+\begin{table}[t]
+\centering
+\caption{Localisation accuracy (IoU $\ge0.5$, \%) by relative size of the ground-truth region (union of the class' boxes as a share of the image), and pointing accuracy (\%) for Grad-CAM and the centre control, $\tau=0.15$.}\label{tab:size}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrrrrr}
+\toprule
+GT size & \# pairs & Grad-CAM & Grad-CAM++ & CAM & Centre & Point: Grad-CAM & Point: Centre \\
+\midrule
+$<10\%$ & 1787 & 3.9 & 0.4 & 0.1 & 0.0 & 67.8 & 18.2 \\
+10--30\% & 1968 & 29.7 & 7.7 & 4.1 & 0.0 & 85.6 & 55.0 \\
+30--60\% & 1876 & 60.4 & 52.8 & 39.4 & 24.5 & 93.9 & 88.1 \\
+$>60\%$ & 1382 & 67.7 & 84.2 & 83.9 & 84.1 & 97.4 & 98.6 \\
+\bottomrule
+\end{tabular}}
+\end{table}

@@ -1,0 +1,23 @@
+\begin{table}[t]
+\centering
+\caption{Paired bootstrap differences (Grad-CAM layer4 minus method) at threshold 0.15, in percentage points.}\label{tab:paired}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{llrr}
+\toprule
+Comparison & Metric & Diff. & 95\% CI \\
+\midrule
+Grad-CAM++ (layer4) & loc\_acc@0.5 & +5.8 & [+4.9, +6.9] \\
+Grad-CAM++ (layer4) & pointing & -0.3 & [-0.8, +0.2] \\
+CAM (layer4) & loc\_acc@0.5 & +10.6 & [+9.5, +11.6] \\
+CAM (layer4) & pointing & -0.0 & [-0.0, +0.0] \\
+Vanilla saliency & loc\_acc@0.5 & +38.2 & [+37.1, +39.4] \\
+Vanilla saliency & pointing & +17.1 & [+15.9, +18.2] \\
+Centre Gaussian (no model) & loc\_acc@0.5 & +15.7 & [+14.6, +16.9] \\
+Centre Gaussian (no model) & pointing & +22.5 & [+21.3, +23.8] \\
+Grad-CAM (layer2) & loc\_acc@0.5 & +26.7 & [+25.5, +27.8] \\
+Grad-CAM (layer2) & pointing & +35.0 & [+33.8, +36.4] \\
+Grad-CAM (layer3) & loc\_acc@0.5 & +9.3 & [+8.2, +10.5] \\
+Grad-CAM (layer3) & pointing & +12.7 & [+11.6, +13.9] \\
+\bottomrule
+\end{tabular}}
+\end{table}
